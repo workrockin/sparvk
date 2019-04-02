@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>What is hard drive partitioning? | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="what-is-hard-drive-partitioning.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>As we talked about in our last article <a href="what-happens-when-you-turn-on-your-computer.html">booting a computer</a> is a very straightforward process. So simple in-fact that most of the time you don’t even realize that its happening. All you do is press the power button and up comes the screen. </p>
+<p>When you press that power button you set in motion a series of events. First the OEM installed BIOS makes the hardware components available to a computer. The device then tries to find a bootloader on a disk (either a hard disk or an external device like usb). Once the bootloader is found, the os kernel is loaded and it starts system services followed by user defined services to make the system run.  </p>
+<p>All of this happens in a sequence. First the BIOS, then the bootloader and then the kernel access the storage device. Most of the time that storage device is the hard disk. This means that there must be a way for the BIOS to find the bootloader on the attached disk and for the bootloader to find the kernel files. </p>
+<p>As a user however you have a very different view of the storage. You don’t really consider or care about system files and directories. All you think about is the location of your files. Most operating systems present the file system to the user as a hierarchy of directories. </p>
+<p>The “home” directory is the one you interact with. In reality it is simply a part of larger system of root directory that contains not only the user files but also system files. Now  summarizing what we’ve discussed so far. </p>
+<ol>
+<li>We need a place on the hard disk where the BIOS can find the bootloader.</li>
+<li>We need a place on the hard disk where the operating system kernel files can be stored.</li>
+<li>We need a place on the hard disk where your files can be stored.</li>
+</ol>
+<p>We have a problem. There is only one disk and there we have placed on it so many different responsibilities. No way can it fulfill all of these demands unless we find a way to compartmentalize the requirements. </p>
+<p><img alt="bird is the word" src="../images/c/0/5/9/3/c05931c0b87b524e4bdefda946f60b48524cab69-hahn-3741129960720.jpeg" /></p>
+<p>Partitioning is this compartmentalizing of the hard disk to serve different purposes at different stages of a system lifecycle. </p>
+<ul>
+<li>When a computer is in a  POST state the BIOS finds the bootloader usually in a vfat / fat partition.  </li>
+<li>When a computer is in a startup state the kernel finds the system files usually in an ext4/ntfs partition</li>
+<li>When a computer is in a running state the user finds his files on the filesystem (again usually ext4/ntfs partition)</li>
+</ul>
+<p>Additionally on most operating systems another partition is created to hold the swap data. Swap is basically a temporary place reserved for applications to use when they run out of RAM. </p>
+<p>Whether the device is an internal disk or an attached storage (via a usb port) it follows the same partitioning structure. This is why you can direct your BIOS to load the operating system from a usb drive without affecting the internal disk. </p>
+<h1>Ain’t it cool?</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

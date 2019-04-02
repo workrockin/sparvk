@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Aero</title>
+    <link href="http://sparvk.workrock.in/aero.atom" rel="self" />
+    <subtitle>Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick.</subtitle>
+    <updated>2018-12-28T14:40:58+00:00</updated>
+    <author>
+        <name>sparvk</name>
+    </author>
+    <id>http://sparvk.workrock.in/aero</id>
+            <entry>
+        <title>The design principles and goals of sparvk</title>
+        <id>http://sparvk.workrock.in/aero/the-design-principles-and-goals-of-sparvk</id>
+        <updated>2018-12-28T14:40:58+00:00</updated>
+        <published>2018-12-28T14:40:58+00:00</published>
+        <link href="http://sparvk.workrock.in/aero/the-design-principles-and-goals-of-sparvk"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/f/b/9/7/8/fb97889658cbf4e51dd1ed15c24d69d93e3effe9-sweet-corn-3705687960720.jpeg" />
+                        <p>sparvk is an opensource distribution of operating systems. Every unit of sparvk is assembled keeping the following principles in mind:- </p><ol><li>
+<p><strong>C</strong>onsistent. Sparvk applications should provide a consistent experience to all the users in a team. Consistency is essential to reduce the amount of effort that must be spend to train new staff. Manuals prepared once may be used for years on end without becoming outdated. Updates to software must not break existing workflows. Sparvk aims to become the found...</p></li></ol>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Supplier distribution kits</title>
+        <id>http://sparvk.workrock.in/aero/supplier-distribution-kits</id>
+        <updated>2018-12-26T06:53:52+00:00</updated>
+        <published>2018-12-26T06:53:52+00:00</published>
+        <link href="http://sparvk.workrock.in/aero/supplier-distribution-kits"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/7/0/0/a/6/700a62ed69c7a7c7faa22b03aa2bd9aa4aa6722a-man-3390927960720.jpeg" />
+                        <p>At sparvk we are committed to enabling our suppliers with the highest quality of products to help them provide the best service to their customers.   </p><p>Since sparvk is a portable distribution of  opensource operating systems it is highly configurable. As a supplier you can request a customized version of sparvk for your customers. sparvk is currently available for use in the following industries:- </p><ol><li>Finance , Accounting and Retail. General purpose, cross domain. </li>
+<li>Hospitality. Short term rent...</li></ol>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Kickstarter course</title>
+        <id>http://sparvk.workrock.in/aero/kickstarter-course</id>
+        <updated>2018-12-15T07:39:44+00:00</updated>
+        <published>2018-12-15T07:39:44+00:00</published>
+        <link href="http://sparvk.workrock.in/aero/kickstarter-course"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/d/1/3/b/d/d13bd0f17c5cbbfd10a9bd55c38c97d9dd8a8f0f-grandmother-1822564960720.jpeg" />
+                        <p>sparvk kickstarter is a crash course that teaches you  how to effectively use opensource operating systems in you daily work life.   </p><p><strong> Who this course is for? </strong> </p><p>sparvk kicstarter course is for anyone who wants to learn what an opensource operating system is. Whether you are an individual or a business, a student or a professional this kickstarter course helps you understand how an opensource operating system can help you increase your productivity and reduce the amount of money you have to...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>What is Aero?</title>
+        <id>http://sparvk.workrock.in/aero/what-is-aero</id>
+        <updated>2018-12-08T15:10:10+00:00</updated>
+        <published>2018-12-08T15:10:10+00:00</published>
+        <link href="http://sparvk.workrock.in/aero/what-is-aero"/>
+                <content type="html">
+            <![CDATA[
+                        <p>Aero is a technology training program that enables your organization to make the most effective use of technology. We do that by:- </p><ol><li>Re-skiling your staff to understand and adopt opensource systems.</li>
+<li>By introducing processes that can help you manage your growth.  </li>
+<li>By providing IT support to keep you moving when you get stuck. </li>
+</ol><p>Aero exists to reduce the spending of your organization on IT. To help you get more out of your existing investments and to train your staff so that they can use tec...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Sparvk standby systems</title>
+        <id>http://sparvk.workrock.in/aero/sparvk-standby-systems</id>
+        <updated>2018-05-09T09:59:00+00:00</updated>
+        <published>2018-05-09T09:59:00+00:00</published>
+        <link href="http://sparvk.workrock.in/aero/sparvk-standby-systems"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/b/0/8/1/8/b08180e2730593fc1fb3a21a7c7aec83aa553776-computer-1574533960720.jpeg" />
+                        <p>Hardware fails. Sometimes because of something you did and sometimes due to no fault of your own. No matter how careful you are. No matter how many precautions you take. </p><p>There are many causes of hardware failure. A corrupted hard drive. A fault in motherboard. A dead memory. Inadequate power supply.</p><p>Harddrive failures are the costliest of them all. Although a hard disk is one of the cheapest parts of a computer and yet it is one that is most precious to you. After all, all your data, the ha...</p>
+            ]]>
+        </content>
+    </entry>
+    </feed>

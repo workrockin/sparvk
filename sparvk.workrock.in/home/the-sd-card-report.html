@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The sd card report | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="the-sd-card-report.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>USB drives are not the only secondary storage medium in the market.  Alternatives like secure disk cards are quite popular. If you use a smart phone you are probably already  using a micro sd card. You’d also be using an SD card if you own let us say a digital camera or maybe a smart TV. Although sd cards were initially designed to provide a compact form of storage in smaller devices these days the SD card slot is pretty common even in laptops and desktops. </p>
+<p>In the last couple of posts we’ve discussed at length how you can switch boot devices to load a completely different operating system. </p>
+<p>SD cards seem like an ideal candidate as a secondary boot device. Its the cheapest form of storage. It is universally accepted. It is smaller than a pendrive and its just as fast, practically speaking. You probably have a couple of  spare cards available right now. Device manufacturers are pushing it as a secondary form of storage. In some IOT devices an sd  card is the primary storage medium. </p>
+<p>But can you boot through an SD card slot on your laptop? Lets find out.  </p>
+<p>Booting through an SD card slot first of all requires a bootable SD card. Since an sd card is just another form of storage making it bootable is not all that tricky. All we have to do is create the right partitions for the <a href="what-happens-when-you-turn-on-your-computer.html">bootloader</a> to be loaded and then for it to find the operating system kernel. So far so good.</p>
+<p>But whether or not you can boot from the sd card slot is an entirely different matter. You’ll recall that <a href="what-is-hard-drive-partitioning.html">the booting process</a> requires intervention from hardware manufacturers’ BIOS firmware and operating system’s bootloader. Both BIOS and bootloader usually have a predefined set of boot devices that they recognize. These devices are </p>
+<ol>
+<li>The hard disk of your machine</li>
+<li>The cd/dvd rom</li>
+<li>The floppy disk</li>
+<li>The usb drive</li>
+<li>The network </li>
+</ol>
+<p>Although internally most SD card readers on the laptop function the same as a usb bus but not all BIOS  recognize them as a boot device. </p>
+<p>Modern computers however have been more accepting of SD card reader as a boot device but there is no way to tell with 100% certainty whether your device supports this option. The only way is to inspect the options in your BIOS menu. </p>
+<p><img alt="aint that a kick in the head" src="../images/b/3/0/4/3/b3043ec715350cb3ae5fc8eafa0b3202e290ba97-animals-3901900960720.jpeg" /></p>
+<p><strong>So what is a reliable way to boot from sd cards? </strong></p>
+<p>While it would have been really cool to boot directly from the sd card reader on your machine a 100% guaranteed solution would be to purchase an SD to usb adapter (you can find it really cheap online) and then boot an SD card like you’d a USB. It is not ideal but it works for sure. </p>
+<p>Sparvk portable operating system distribution can be loaded on a card of your choice to make it bootable. That way you can have multiple operating systems cards waiting to be deployed on your machine.</p>
+<h1>Try it you’ll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

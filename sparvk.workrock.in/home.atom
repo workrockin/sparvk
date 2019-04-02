@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Home</title>
+    <link href="http://sparvk.workrock.in.atom" rel="self" />
+    <subtitle>Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick.</subtitle>
+    <updated>2019-01-15T06:19:30+00:00</updated>
+    <author>
+        <name>sparvk</name>
+    </author>
+    <id>http://sparvk.workrock.in/home</id>
+            <entry>
+        <title>How does a computer know what to do next?</title>
+        <id>http://sparvk.workrock.in/home/how-does-a-computer-know-what-to-do-next</id>
+        <updated>2019-01-15T06:19:30+00:00</updated>
+        <published>2019-01-15T06:19:30+00:00</published>
+        <link href="http://sparvk.workrock.in/home/how-does-a-computer-know-what-to-do-next"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/8/c/8/a/5/8c8a59308563b1783106c629d195c660ad2f0440-lizard-804114960720.jpeg" />
+                        <p>A computer is a programmed machine that runs through the sequence of its instruction set. If the <a href="/home/what-happens-when-you-turn-on-your-computer">instruction is to boot</a> the machine turns on. If the instruction is to launch an application it launches an application. If the instruction is to learn the machine learns. </p><p>This instruction set, usually called a program, is put on an electronic device called computer memory.  Depending upon the type of storage needed there are different types of memories</p><ul><li>A ROM is a permanent Read Only Memory tha...</li></ul>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>The sd card report</title>
+        <id>http://sparvk.workrock.in/home/the-sd-card-report</id>
+        <updated>2019-01-06T21:56:15+00:00</updated>
+        <published>2019-01-06T21:56:15+00:00</published>
+        <link href="http://sparvk.workrock.in/home/the-sd-card-report"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/f/7/e/2/5/f7e25891ec6086a1cf5db50f507f27663b636793-animals-3901900960720.jpeg" />
+                        <p>USB drives are not the only secondary storage medium in the market.  Alternatives like secure disk cards are quite popular. If you use a smart phone you are probably already  using a micro sd card. You&rsquo;d also be using an SD card if you own let us say a digital camera or maybe a smart TV. Although sd cards were initially designed to provide a compact form of storage in smaller devices these days the SD card slot is pretty common even in laptops and desktops. </p><p>In the last couple of posts we&rsquo;ve d...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>The boot order</title>
+        <id>http://sparvk.workrock.in/home/the-boot-order</id>
+        <updated>2019-01-04T06:58:59+00:00</updated>
+        <published>2019-01-04T06:58:59+00:00</published>
+        <link href="http://sparvk.workrock.in/home/the-boot-order"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/a/4/7/8/f/a478f58bab089d0c46f057338034f30e56965de3-sheep-3727049960720.jpeg" />
+                        <p>As we saw in the last post the <a href="/home/what-happens-when-you-turn-on-your-computer">boot process</a> is a series of steps that change the state of your computer from a system at rest to a running machine that can do real work. </p><p>Now one of the steps in this boot process is to find the actual boot device. To clarify the boot device is a storage medium on which your bootloader and operating system files are located. To further clarify a boot device is different from the BIOS firmware unit that comes installed on the hardware. </p><p>For most computers th...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>What is hard drive partitioning?</title>
+        <id>http://sparvk.workrock.in/home/what-is-hard-drive-partitioning</id>
+        <updated>2018-12-28T14:47:51+00:00</updated>
+        <published>2018-12-28T14:47:51+00:00</published>
+        <link href="http://sparvk.workrock.in/home/what-is-hard-drive-partitioning"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/8/b/b/a/c/8bbac554cad5803c27255fd22e780f708871919a-hahn-3741129960720.jpeg" />
+                        <p>As we talked about in our last article <a href="/home/what-happens-when-you-turn-on-your-computer">booting a computer</a> is a very straightforward process. So simple in-fact that most of the time you don&rsquo;t even realize that its happening. All you do is press the power button and up comes the screen. </p><p>When you press that power button you set in motion a series of events. First the OEM installed BIOS makes the hardware components available to a computer. The device then tries to find a bootloader on a disk (either a hard disk or an external device like us...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Managing your photos with sparvk pods</title>
+        <id>http://sparvk.workrock.in/home/managing-your-photos-with-sparvk-pods</id>
+        <updated>2018-12-27T13:16:35+00:00</updated>
+        <published>2018-12-27T13:16:35+00:00</published>
+        <link href="http://sparvk.workrock.in/home/managing-your-photos-with-sparvk-pods"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/8/e/4/9/f/8e49fe61b0cb90c10411dd4c9d97621cf526ec02-darktable.png" />
+                        <p>sparvk provides you with various tools to help you manage your photographs. At the file level it enables you to arrange all your photos in directories. By default sparvk comes with a Pictures directory. As the name suggests the Pictures directory is meant to function as your digital photo album. Here you can create subdirectories to file your photos in multiple albums. For example there can be a family album that keeps all the photos of your family members. There can be a  holiday album keeping...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>What happens when you turn on your computer?</title>
+        <id>http://sparvk.workrock.in/home/what-happens-when-you-turn-on-your-computer</id>
+        <updated>2018-12-27T13:10:54+00:00</updated>
+        <published>2018-12-27T13:10:54+00:00</published>
+        <link href="http://sparvk.workrock.in/home/what-happens-when-you-turn-on-your-computer"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/3/f/c/4/3/3fc4327bb15bfb7d48853196559e0897b9285da8-aircraft-2795557960720.jpeg" />
+                        <p>When you press the power button on your computer it starts a series process collectively known as booting. Initially only a part of ROM storage is accessible to the computer. A small firmware program (BIOS) located on the ROM runs to perform a POST (power on self test) preparing the computer to access other parts of its hardware like ram and hard disk. </p><p>Following the POST setup a "bootstrap" loader is invoked to load the operating system kernel. The operating system kernel in turn runs a serie...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Templatizing files and directories in sparvk pod</title>
+        <id>http://sparvk.workrock.in/home/templatizing-files-and-directories-in-sparvk-pod</id>
+        <updated>2018-12-22T13:51:08+00:00</updated>
+        <published>2018-12-22T13:51:08+00:00</published>
+        <link href="http://sparvk.workrock.in/home/templatizing-files-and-directories-in-sparvk-pod"/>
+                <content type="html">
+            <![CDATA[
+                        <p>sparvk portable operating systeM distribution allows you to creatE templates for youR  documents. A template file oR a directorY lets you to overwrite the default creation behavior of the operating system. </p><p>By default the operating system Creates a new file as an empty document. A new directory as an empty directory. WitH the help of templates you can cReate a default structure for your fIles or directorieS. The creation of a new file would then won't be a default eMpty file but rAther it coul...</p>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Plug and play printing and scanning with sparvk pods</title>
+        <id>http://sparvk.workrock.in/home/plug-and-play-printing-and-scanning-with-sparvk-pods</id>
+        <updated>2018-12-18T17:40:08+00:00</updated>
+        <published>2018-12-18T17:40:08+00:00</published>
+        <link href="http://sparvk.workrock.in/home/plug-and-play-printing-and-scanning-with-sparvk-pods"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/4/1/8/5/6/4185618d3759f883cbfcf582973dec522a538736-cupslog.png" />
+                        <p>sparvk enabled operating system provides a generic interface to printers through the <code>cups</code> package. The goal of this package is to provide a unified access to a number of printers. CUPS runs as a server daemon in the background and automatically starts when your system boots. </p><p>By default <code>cups</code> package does not come installed in sparvk pod. You can install it by opening a terminal window and </p><ol><li>Switching to a root user by typing <code>su</code> and pressing enter</li>
+<li>Giving your password </li>
+<li>typing <code>apt-ge...</code></li></ol>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>Why sparvk?</title>
+        <id>http://sparvk.workrock.in/home/why-sparvk</id>
+        <updated>2018-12-18T17:33:40+00:00</updated>
+        <published>2018-12-18T17:33:40+00:00</published>
+        <link href="http://sparvk.workrock.in/home/why-sparvk"/>
+                <content type="html">
+            <![CDATA[
+                        <p>10 reasons you might want to try out sparvk</p><ol><li>Works off a pendrive so you can have multiple operating systems on a single workstation. Much better alternative to virtualization. Lets you create <a href="/home/why-sparvk/home/users-and-sessions-in-sparvk-pod">multiple users</a> on a single machine. </li>
+<li><a href="/home/reducing-your-it-costs-with-sparvk-pods">Cheap</a>. No licensing fee.  Built on free and opensource software</li>
+<li>Easy to operate. Provides effective tools for collaboration and file management</li>
+<li>Can connect to <a href="/home/remote-file-management-and-backup-with-sparvk">remote servers</a> from within the desktop itself. </li>
+<li>A <a href="/uses/consistent-computing-experience-for-franchises-with-sparvk">consistent</a> user experience across all your co...</li></ol>
+            ]]>
+        </content>
+    </entry>
+            <entry>
+        <title>An uncluttered desktop experience</title>
+        <id>http://sparvk.workrock.in/home/an-uncluttered-desktop-experience</id>
+        <updated>2018-12-16T06:29:26+00:00</updated>
+        <published>2018-12-16T06:29:26+00:00</published>
+        <link href="http://sparvk.workrock.in/home/an-uncluttered-desktop-experience"/>
+                <content type="html">
+            <![CDATA[
+                        <img alt="" src="/images/b/9/2/4/8/b924842641f4cf8dd3689d17aa7f3b88d5f9594a-desktopexp.png" />
+                        <p>Organization of the data on your computer requires discipline and consistency.
+But often due to a tight schedule "housekeeping" gets de-prioritized. Things pile
+up. Files accumulate. Folders stack on and before you know it your desktop is a
+mess like your store in the basement. But while you can simply ignore your basement you have
+to work with your desktop daily. </p><p>Every-time you power on your computer you step
+in to disorder, chaos. You can't say for sure if your resume is placed in "new
+fold...</p>
+            ]]>
+        </content>
+    </entry>
+    </feed>

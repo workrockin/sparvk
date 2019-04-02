@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Users and sessions in sparvk pod | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="users-and-sessions-in-sparvk-pod.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>A sparvk portable operating system distribution comes with a very nifty feature that allows you to use a single installation with multiple users. Such that:- </p>
+<ol>
+<li>
+<p>Each user will have their own directory that keeps the work data separate from all other users. This is a logical separation. Only the administrator has the access to view the data for any user. </p>
+</li>
+<li>
+<p>New programs can only be installed by the admin. A normal user can't install programs. It is also possible to limit the access of programs to a particular user although by default most programs installed by admin can also be used by a normal user (unless of course the program requires admin access to run)</p>
+</li>
+<li>Each user can have multiple sessions. A session is a snapshot of a running system in time. For example:- in one session a user may be working on a spreadsheet program. Later he may switch to a different session where he works on <a href="getting-started-with-inkscape-on-sparvk.html">Inkscape</a> for some design related task. Both sessions will be completely separate from each other with their own set of running programs. </li>
+</ol>
+<p><img alt="opensource operating system with multi user support" src="../images/9/d/a/5/e/9da5eb81845e88a5e7b6a4e171d98d14539617ef-sessions.png" />
+In other words a sparvk enabled workstation can be shared amongst your entire staff. If you are a small business and have little resources to buy machines this is an ideal scenario for you. </p>
+<p>Even if you're a big business and you want to limit the number of machines your staff has access to perhaps due to some sensitive nature of the data you can simply create multiple accounts on a single machine and reduce the number of components you have to manage. </p>
+<p><img alt="monitoring capabilities" src="http://sparvk.workrock.in/user/pages/01.home/users-and-sessions-in-sparvk-pod/auth_log.png" /></p>
+<p>Sparvk pod constantly logs all the user activity on a machine. As an administrator you can monitor which user did what. Although it is possible to view the logs on a command line to make things easier sparvk comes with Ksystemlog application that allows you to view application logs from a command line interface. </p>
+<p><img alt="switching users and sessions on open source operating system" src="http://sparvk.workrock.in/user/pages/01.home/users-and-sessions-in-sparvk-pod/managing_users.png" /></p>
+<h1>How to create new users?</h1>
+<ol>
+<li>From the start menu navigate to application&gt;settings&gt;system.  </li>
+<li>Then click on the Account Details under the personalization section. </li>
+<li>In the screen that pops up click on User Manager. </li>
+</ol>
+<p>Please note that you need administrative privileges to create a new user. </p>
+<h1>How to create new sessions?</h1>
+<ol>
+<li>From tthe start menu navigate to leave &gt; switch user</li>
+<li>In the screen that pops up either click the + icon to start a new session with the same user. Or click on the switch user button to start a new session as a different user. </li>
+</ol>
+<p>And that's all. Depending upon your choice in the previous step you should either be logged in as a new user or in a new session with the same user. </p>
+<p><strong>How to end your session?</strong> </p>
+<p>Ending your session is very straightforward. </p>
+<ol>
+<li>Launch the sparvk application menu</li>
+<li>Navigate to the leave tab</li>
+<li>Click on the logout button. </li>
+</ol>
+<p>And that's it. You've just ended your session.  </p>
+<p>Sessions and user accounts increase the value you get out of a sparvk enabled machine. It reduces the burden of having to manage multiple machines. Adding more users and switching to new sessions is highly intuitive. One click is all you need. </p>
+<h1>Try it you'll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

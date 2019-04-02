@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The boot order  | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="the-boot-order.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>As we saw in the last post the <a href="what-happens-when-you-turn-on-your-computer.html">boot process</a> is a series of steps that change the state of your computer from a system at rest to a running machine that can do real work. </p>
+<p>Now one of the steps in this boot process is to find the actual boot device. To clarify the boot device is a storage medium on which your bootloader and operating system files are located. To further clarify a boot device is different from the BIOS firmware unit that comes installed on the hardware. </p>
+<p>For most computers this default boot device is the hard disk. And on majority of computers the hard disk contains an operating system image (usually paid for by the manufacturer) which means that you almost never have to worry about the boot order of your devices. If however you want to install a new operating system on your computer or you have to replace your existing hard drive due to a failure it becomes important to understand how a boot device is chosen by a BIOS. </p>
+<p>Well first of all BIOS recognizes multiple boot devices. It can boot from a cd/dvd drive. It can boot from a storage medium attached to a usb whether that is a pendrive or an external hard disk. It can also boot over a network that is the BIOS can download files from a connected remote machine and run it locally. It used to even boot from the floppy drive but since floppies disks are no longer manufactured this feature is mostly useless.      </p>
+<p>Although it can boot from multiple devices at any give time only one device can be used. It may boot from a <a href="what-is-hard-drive-partitioning.html">hard disk</a> or it may boot from a usb drive. But not from both of them at the same time. </p>
+<p>But what happens when you have multiple boot devices present on a system. Consider for example a case when computer with a built in hard disk a DVD ROM and a plugged in pendrive is turned on? How would the BIOS determine on which device the OS files are located? </p>
+<p>By simply looking into each of these devices on by one until it finds a booloader. It does not sound very effective but its really quick and works well and considering you can have only a finite number of boot devices on computer normally there is hardly a reason to change this approach. But then the question arises in which device the BIOS looks first? </p>
+<p>Well that is determined by the boot order in your BIOS. In your BIOS you can give priority to different devices. For example you can instruct your BIOS to first try accessing the bootloader from the DVD ROM and if that fails try the hard disk. Or from the USB device or any another order that you can think of.      </p>
+<p>But the boot order feature is more of an "automated bootloader selection " ( or ABS for short) from a boot device. Most computers allow you to override this boot device selection process altogether by manually specifying the device to load from at the time of startup. </p>
+<p>Pressing a certain key eg esc or del ( it's different for each computer) at the time of boot brings up a device selection menu which lists down all the devices on which bootloader is present. You can then choose which one you want to load your os from. </p>
+<p><img alt="thats the way I like it" src="../images/4/2/0/c/3/420c368be6ababda4e4aabae51a32500f949a8af-sheep-3727049960720.jpeg" /></p>
+<p>As a user you have a lot of flexibility to choose from various operating systems. sparvk  pods are portable distributions of opensource operating systems that allow you to exercise that choice by providing you with ready made os for suited for different occasions. All you have to do is plug in the usb stick and choose to boot from it at the time of startup. </p>
+<h1>Try it you’ll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

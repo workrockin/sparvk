@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>How does a computer know what to do next? | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="how-does-a-computer-know-what-to-do-next.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>A computer is a programmed machine that runs through the sequence of its instruction set. If the <a href="what-happens-when-you-turn-on-your-computer.html">instruction is to boot</a> the machine turns on. If the instruction is to launch an application it launches an application. If the instruction is to learn the machine learns. </p>
+<p>This instruction set, usually called a program, is put on an electronic device called computer memory.  Depending upon the type of storage needed there are different types of memories</p>
+<ul>
+<li>A ROM is a permanent Read Only Memory that can retain data even after the power is turned off</li>
+<li>A RAM is a temporary Random Access Storage that looses all of its data as soon as the power is turned off</li>
+<li>A hard disk drive is a permanent storage device that can both read and write data. </li>
+</ul>
+<p>To execute its programs a computer needs to find a way to access it first.  For different types of programs there are different <a href="what-is-hard-drive-partitioning.html">access strategies</a>.  A program running on a computer however has little understanding of how its instructions will actually be run. In other words the details of a program execution are abstracted from the program . This abstraction is called an operating system. </p>
+<p>All running computers  have a supervisor application running in the background (again an operating system) that determines how all of the other programs are going to be run. </p>
+<p><strong>So?</strong> </p>
+<p>When a computer executes the set of instructions it becomes what is called a state machine. A state machine is simply a device that moves from one state to another when certain input is applied to it. Consider the following scenario as an example. </p>
+<ol>
+<li>You press the power button on your computer</li>
+<li>The computer changes state from a machine at rest to a running system.    </li>
+</ol>
+<p>Now consider a computer that is already turned on and run through the following steps:- </p>
+<ol>
+<li>You click to open a web browser</li>
+<li>The browser window opens waiting for you to navigate to a website. </li>
+</ol>
+<p>In the first case the computer itself changes state from a machine at rest to a running system. In the second case an application changes state from being a program at rest to a running program.  </p>
+<p>Your entire session on a computer is basically a series of state changes. A movement of applications and programs from one state to another. </p>
+<p><strong>So?</strong> </p>
+<p>With that definition we can try to understand what a computer is.  A very simple definition -- a computer is simply an electronic state machine with devices that change the state of its programs. But if all computer did was to transition from a series of predefined states it would be pretty much useless. Imagine how lame it would be if your browser could only navigate one website? Or if your word processor could only edit a single document? </p>
+<p>A computer is useful because it moves through not only predefined states but also user defined states. An example of a predefined state is the boot sequence. All you have to do to turn on the computer is to press the power button. The rest it does on its own. </p>
+<p>An example of a user defined state machine could be <a href="templatizing-files-and-directories-in-sparvk-pod.html">your resume</a> present in your documents directory. When you click to open your resume it starts a document  processor , then it loads the contents on your file making it ready for editing. In this example the state of the document processor is stored in a file which is in turn stored on the hard disk.    </p>
+<p>As a user you create countless state machines that are executed on your behalf. In most programs these states are grouped under "settings" that can be tweaked.  So that when a program starts it looks for these settings and loads them up to launch an environment that you prefer. </p>
+<p><img alt="sun bathing" src="../images/0/5/8/2/7/05827c55a910d8cef750bc412c639c1937fa43aa-lizard-804114960720.jpeg" /></p>
+<p><strong>Oh!</strong></p>
+<p>Yeah!</p>
+<p>sparvk is a portable distribution of open source operating systems that allow you to save your states in a detachable storage medium that can be plugged it inside any computer to start your session right where you left it off. Giving each one of your machines multiple dimensions.   </p>
+<h1>Try it you'll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

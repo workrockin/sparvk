@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Creating invoices with gnu cash on sparvk | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="creating-invoices-with-gnu-cash.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p><a href="benefits-of-gnucash-and-how-to-install-it-on-a-sparvk-pod.html">Gnucash free accounting software</a> allows you to create invoices for your customers. For the purposes of this tutorial we'll create a new business account. Start gnucash and navigate to file new file. Proceed through the steps in the wizard. On the create account screen make sure that you choose a business account. Customers , employees and vendors are a business feature and only business accounts can use them. </p>
+<p><img alt="free accounting software for businesses" src="../images/b/7/1/b/3/b71b384316bdf7925060d6d773d78c33c30bd031-createaccount.png" /> </p>
+<p>To create a new invoice you need to have a customer. Therefore we'll create one. </p>
+<ol>
+<li>Navigate to business&gt;customer&gt;new customer</li>
+<li>In the new screen that pops up enter the company name and billing address. GnuCash gives you the option of adding notes to the customer. Use this field to add any details that you might find relevant to the customer. </li>
+<li>Click OK once you're done. </li>
+</ol>
+<ul>
+<li>As you might have notice the new customer pop up window contains more fields where you can set the billing currency as well as the shipping address of the customer. For the purposes of this tutorial we'll assume that customer will be billed in the same currency as our business account*</li>
+</ul>
+<p>Once we've created our customer we can invoice them. </p>
+<ol>
+<li>Once more navigate to business&gt;customer and choose the invoice option. </li>
+<li>This time you'll be take to a "New Invoice" window. Choose the customer we just created by clicking on the select customer field. Please note that you'll have to search for the customer. This might seem a bit odd considering that you have only 1 customer in the database but it is an extrememly helpful feature when you've got a lot of customers. </li>
+<li>Fill in the remaining fields and click Ok. You should now be taken to the invoice edit screen. </li>
+</ol>
+<p><img alt="free invoicing app for small businesses" src="http://sparvk.workrock.in/user/pages/01.home/creating-invoices-with-gnu-cash/invoice_edit.png" /></p>
+<p>The invoice edit screen is pretty comprehensive allowing you to fill in </p>
+<ol>
+<li>The description of the invoice</li>
+<li>Adding discount. </li>
+<li>Total number of units as well as the unit price. </li>
+</ol>
+<p>You can also select whether the sale is taxable and if so how much should be taxed. Setting up tax tables however is beyond the scope of this article so we'll cover it some other time. </p>
+<p>There is one more important point that we should cover here. The invoice edit screen allows you to determine where the invoice should be credited. You can mark the invoice to automatically credit any type of income sub account. Whether it is sales or interest etc. For this example we'll mark it as a sales income. </p>
+<p>Once you're done editing click on the icon in the toolbar that says "Post Invoice to your chart of accounts" and then hit the save button. If you go back to your chart of accounts you should see that you income has increased. You can now choose to reconcile this entry or come back to it later. </p>
+<p><strong>A few more things to note</strong></p>
+<p>Remember how we added a new customer above? well if you now try to find the customer you'll see that gnu cash has automatically added an id to it. And in the same tab you can view all the invoices against this customer.  Similarly you'll find that an ID has been automatically added for your invoices. These id's help you keep your statements organized. Cool right? </p>
+<p>Gnucash is a powerful free and opensource accounting tool that can handle all your bookkeeping tasks. </p>
+<h1>Try it you'll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

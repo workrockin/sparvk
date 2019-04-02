@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Templatizing files and directories in sparvk pod | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="templatizing-files-and-directories-in-sparvk-pod.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>sparvk portable operating systeM distribution allows you to creatE templates for youR  documents. A template file oR a directorY lets you to overwrite the default creation behavior of the operating system. </p>
+<p>By default the operating system Creates a new file as an empty document. A new directory as an empty directory. WitH the help of templates you can cReate a default structure for your fIles or directorieS. The creation of a new file would then won't be a default eMpty file but rAther it could be pre-populated with the text that you have defined in the template. </p>
+<p>The obviouS(!!) advantage of this feature is that you won't have to copy/paste content from one file into another and then edit out the bits that need to change. Instead you can simply create the file from the template and then proceed with the editing. In the process saving additional steps you need to perform to copy content. This proves to be really handy when you work with multiple such files on a daily basis.  </p>
+<p>There is another advantage that is not immediately obvious. Templatizing allows you to codify your business logic. Do you have a contract template for new move ins? Templatize it so that your sales staff can quickly create new contracts and get the deal done.  Does your organization has a specific application procedure for leaves? Create a leave application template and distribute it your team members. </p>
+<p><strong>How to create templates in sparvk enabled os? </strong>  </p>
+<p>To create a template you need to be prepared with the content of the template. Here you fill in the general stuff and leave out the specific to be filled in by the user as required. Once you're ready with that follow the steps below to start templatizing. Here are the actual steps that you need to perform:- </p>
+<ul>
+<li>Open up a terminal </li>
+<li>Type the following <code>mkdir ~/.local/share/templates/.source</code>. This command will create the <code>templates</code> directory with the <code>.source</code> directory if it does not already exist in your .local/share.   </li>
+<li>Type <code>nano ~/.local/share/templates/LeaveApplication.desktop</code> this will bring up a terminal based editor window. In which you have to paste the code below 
+<blockquote>
+<p>[Desktop Entry]
+Name=Leave Applicatication  ...
+Comment=Enter filename:
+Type=Link
+URL=.source/leave_application.txt
+Icon=libreoffice-oasis-text</p>
+</blockquote></li>
+</ul>
+<p>This defines a new "Desktop entry" (basically a shortcut to create new files) by the name of Leave Application. The <code>Comment</code> part defines the prompt text that is going to show up when the user creates a file of this type. The <code>URL</code> points to the actual content of the file which is present inside a hidden directory called <code>.source</code> .   </p>
+<p>Once you've pasted this code exit the editor by pressing <code>CTRL + X</code> and typing Y in the prompt. </p>
+<p><strong>Note</strong></p>
+<p>You can change the <code>Name</code> field according to your requirements. It may be called <code>Lease Agreement</code> for example if you're creating a template for a lease.  </p>
+<p>Now moving on to creating the actual content of the file. </p>
+<ul>
+<li>From your terminal type the following command <code>nano ~/.local/share/templates/.source/leave_application.txt</code> </li>
+<li>Type in the contents you want in the editor that opens up.</li>
+<li>
+<p>Close the editor by typing <code>CTRL + X</code> and typing <code>Y</code> on the prompt that comes up. </p>
+<p>If you want more templates to be created simply repeat the steps above. Once you have this setup ready you'll need to restart your computer to let the filesystem know about the changes you've just made ( actually you can also restart the filesystem but a total reboot is just as quick with no need for actually typing in the commands)  </p>
+</li>
+</ul>
+<p>With that done navigate to your home folder. Right click on the screen. You should see a new entry in the "new" menu titled Leave Application. Congratulations. You've done it.</p>
+<p>As you can see creating templates in sparvk is pretty straightforward. All you need to do is type in a few commands and<br />
+sparvk portable operating system distribution will take care of all the boring repetitive stuff. You just need to tell it what to do. </p>
+<h1>Try it you'll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>

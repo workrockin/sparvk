@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Plug and play printing and scanning with sparvk pods | sparvk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="GravCMS" />
+    <meta name="description" content="Sparvk is an easy to use, yet powerful, portable operating system distribution that can run off a usb stick. " />
+
+    <link rel="icon" type="image/png" href="http://sparvk.workrock.in/user/themes/quark/images/favicon.png" />
+    <link rel="canonical" href="plug-and-play-printing-and-scanning-with-sparvk-pods.html" />
+
+                                                        
+                                
+            <link href="http://sparvk.workrock.in/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/spectre.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css-compiled/theme.min.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/custom.css" type="text/css" rel="stylesheet" />
+<link href="http://sparvk.workrock.in/user/themes/quark/css/line-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+section#footer{display:none;}
+
+</style>
+
+        <script src="http://sparvk.workrock.in/system/assets/jquery/jquery-2.x.min.js" ></script>
+
+    
+</head>
+<body id="top" class=" header-fixed header-animated">
+    <div id="page-wrapper">
+            <section id="header" class="section">
+            <section class="container grid-lg">
+                <nav class="navbar">
+                    <section class="navbar-section logo">
+                        <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo_transparent.png" alt="" />
+</a>                    </section>
+                    <section class="navbar-section desktop-menu">
+
+                        <nav class="dropmenu animated">
+                                                    
+<ul >
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+                                                </nav>
+
+                        
+                    </section>
+                </nav>
+            </section>
+        </section>
+        <div class="mobile-menu">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    
+    
+        <section id="start">
+                    <section id="body-wrapper" class="section">
+                <section class="container grid-lg">
+                                            
+                                            
+<p>sparvk enabled operating system provides a generic interface to printers through the <code>cups</code> package. The goal of this package is to provide a unified access to a number of printers. CUPS runs as a server daemon in the background and automatically starts when your system boots. </p>
+<p>By default <code>cups</code> package does not come installed in sparvk pod. You can install it by opening a terminal window and </p>
+<ol>
+<li>Switching to a root user by typing <code>su</code> and pressing enter</li>
+<li>Giving your password </li>
+<li>typing <code>apt-get install cups</code></li>
+</ol>
+<p>CUPS provides command line interface to work with although every sparvk pod comes with a UI to manage the CUPS daemon behind the scenes. In practice you should never have to deal with the command line interface. Once you've installed CUPS you can configure the printer settings using the print settings interface.</p>
+<p><img alt="configuring print settings on debian" src="http://sparvk.workrock.in/user/pages/01.home/plug-and-play-printing-and-scanning-with-sparvk-pods/printer-config.png" /></p>
+<p>The print settings on sparvk pod allows you to set </p>
+<ol>
+<li>Access control on printers giving rights to a particular set of users who can print</li>
+<li>A default page size to print on. Output resolution as well as attaching banners on each printed object. </li>
+<li>Creating new printers. Grouping printers together into classes so as schedule more effective print jobs across a section of printers. </li>
+</ol>
+<p>A lot of other configuration options are available that allow you to fine tune your printers down to the specifics. For any printer that you print the application there's a very handy real time display of print queue that you can access by </p>
+<ol>
+<li>Going to the print settings application</li>
+<li>Right clicking the printer and selecting the view "View print queue" option.</li>
+</ol>
+<p><img alt="managing the print queue on linux" src="http://sparvk.workrock.in/user/pages/01.home/plug-and-play-printing-and-scanning-with-sparvk-pods/print_queue.png" /></p>
+<p>The print queue allows you to see a list of all the pages that are about to be printed and give you a chance to perform pre printing operations or maybe retry the jobs that have failed. </p>
+<p>More configuration options are documented on the <a href="https://www.cups.org/documentation.html">CUPS manual page</a>. For most general taks however CUPS is easy enough to administer that you would have no need to refer to the documentation. In case you do need help it is available.   </p>
+<p>For troubleshooting CUPS maintains a very detailed log of all its operations. You can check the logs either directly from /var/log/cups/ directory or from a log viewing application like Ksystem log (recommended). CUPS developers also maintain a mailing list that you can subscribe to and submit any problems that you encounter. </p>
+<p><img alt="open source printing on debian" src="../images/c/3/c/0/a/c3c0a71c2d2ffbcc9430f869dd6819f8cda8608b-cupslog.png" /></p>
+<h1>Scanning</h1>
+<p>Scanning requires use of a third party app. Most scanners come with their own driver software that is usually not supported on linux systems. But debian has packages that allow you to connect a scanner via a usb port and save the scanned file as a JPEG, PNG, BMP, PDF or anyother file format that you prefer.  </p>
+<p>We'll use the <a href="https://www.kde.org/applications/graphics/skanlite/">skanlite</a> package to scan our files. Skanlite is a very simple application that simply scans your documents and save it in a format you want. This is as straightforward as you can get. To install skanlite on your sparvk pod open up a terminal and </p>
+<ol>
+<li>Siwtch to the root users by typing <code>su</code> and hitting enter</li>
+<li>Providing your password at the command line prompt</li>
+<li>Typing <code>apt-get install skanlite</code> and pressing enter. </li>
+</ol>
+<p>Once you've got skanlite installed its time for some action. Open the application from the applications menu or from the quick search bar (alt+space). When it starts skanlite will ask you to choose your scanner. From there on its simply a matter of clicking the scan button to scan your document.  </p>
+<p><img alt="plug and play scanning on debian" src="http://sparvk.workrock.in/user/pages/01.home/plug-and-play-printing-and-scanning-with-sparvk-pods/options.png" /></p>
+<p>Once a document has been scanned it will be saved on your local filesystem. sparvk pods provide you with an <a href="managing-your-photos-with-sparvk-pods.html">extensive toolset  managing photos</a>. Make sure to use them!  </p>
+<p><em>If you're a printer or a scanner manufacturer we'd love to work with
+you to provide an excellent print experience on sparvk enabled operating systems.<br />
+Please do get in touch. Alternatively if you've independently released debian based packages
+that we are not aware of kindly let us know and we'll link to them
+in this article.</em></p>
+<h1>Try it you'll like it</h1>
+                </section>
+            </section>
+                </section>
+
+    </div>
+
+            <section id="footer" class="section bg-gray">
+    <section class="container grid-lg">
+        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
+    </section>
+</section>
+        
+    <div class="mobile-container">
+        <div class="overlay" id="overlay">
+            <div class="mobile-logo">
+                <a href="../index.html" class="navbar-brand mr-10">
+    <img src="http://sparvk.workrock.in/user/themes/quark/images/logo/sparvk_logo.svg" alt="" />
+</a>            </div>
+            <nav class="overlay-menu">
+                
+<ul class="tree">
+                      <li>
+        <a href="../index.html" class="active ">
+          Home
+        </a>
+      </li>
+                    <li>
+        <a href="../aero.html" class=" ">
+          Aero
+        </a>
+      </li>
+                    <li>
+        <a href="../uses.html" class=" ">
+          Uses
+        </a>
+      </li>
+                    <li>
+        <a href="../about.html" class=" ">
+          About
+        </a>
+      </li>
+      
+</ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <script src="http://sparvk.workrock.in/user/plugins/simplesearch/js/simplesearch.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/jquery.treemenu.js" ></script>
+<script src="http://sparvk.workrock.in/user/themes/quark/js/site.js" ></script>
+
+
+</body>
+</html>
